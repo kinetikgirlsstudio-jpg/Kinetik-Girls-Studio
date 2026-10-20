@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinetik Girls Studio - Websites that bring clients</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* KINETIK GIRLS STUDIO - DARK PREMIUM EDITION */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #0e0e0e; color: #f5f5f5; line-height: 1.5; }
+
+/* HEADER - DARK */
+header { display: flex; justify-content: space-between; align-items: center; padding: 24px 40px; max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #1f1f1f; }
+.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; line-height: 1; color: #fff; }
+.logo span { color: #e91e63; font-size: 28px; }
+nav { display: flex; gap: 20px; align-items: center; }
+nav a { text-decoration: none; color: #aaa; font-size: 14px; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: #fff; }
+.btn-outline { border: 1.5px solid #e91e63; color: #e91e63 !important; padding: 8px 18px; border-radius: 30px; }
+.btn-outline:hover { background: #e91e63; color: #fff !important; }
+
+/* HERO - DARK */
+.hero { max-width: 1200px; margin: 0 auto; padding: 80px 40px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+.hero h1 { font-family: 'Syne', sans-serif; font-size: 56px; font-weight: 800; line-height: 0.9; letter-spacing: -1.5px; color: #fff; }
+.hero p { margin-top: 18px; color: #888; max-width: 480px; font-size: 16px; }
+.hero-btns { margin-top: 32px; display: flex; gap: 12px; }
+.btn-pink { background: #e91e63; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 20px rgba(233,30,99,0.4); }
+.btn-pink:hover { background: #c2185b; }
+.btn-black { border: 1.5px solid #333; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: 700; background: #1a1a1a; }
+.btn-black:hover { border-color: #fff; }
+.hero-tags { margin-top: 24px; font-size: 11px; color: #555; letter-spacing: 1px; text-transform: uppercase; }
+.hero-visual { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 24px; height: 340px; display: flex; align-items: center; justify-content: center; font-size: 80px; color: #e91e63; }
+
+/* WORK - DARK */
+.work { background: #141414; padding: 80px 40px; border-top: 1px solid #1f1f1f; border-bottom: 1px solid #1f1f1f; }
+.work h2, .pricing h2 { font-family: 'Syne', sans-serif; font-size: 38px; font-weight: 800; text-align: center; color: #fff; }
+.subtitle { text-align: center; color: #666; font-size: 14px; margin-top: 8px; }
+.cards { max-width: 1200px; margin: 50px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { background: #1c1c1c; padding: 16px; border-radius: 20px; border: 1px solid #2a2a2a; transition: 0.3s; }
+.card:hover { border-color: #e91e63; transform: translateY(-4px); }
+.mockup { background: #0e0e0e; color: #fff; padding: 45px 20px; border-radius: 14px; text-align: center; font-weight: 700; min-height: 150px; border: 1px solid #222; }
+.mockup small { display: block; font-weight: 400; font-size: 11px; margin-top: 8px; color: #777; }
+.card h3 { margin-top: 18px; font-size: 16px; color: #fff; }
+.card span { font-size: 12px; color: #666; display: block; margin-top: 4px; }
+.card a { display: block; margin-top: 12px; color: #e91e63; font-weight: 700; font-size: 13px; text-decoration: none; }
+
+/* PRICING - DARK */
+.pricing { max-width: 1200px; margin: 0 auto; padding: 90px 40px; }
+.price-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
+.price-card { border: 1px solid #2a2a2a; background: #161616; padding: 30px; border-radius: 22px; }
+.price-card.popular { border-color: #e91e63; background: #1e1216; box-shadow: 0 0 30px rgba(233,30,99,0.15); }
+.price { font-size: 34px; font-weight: 800; margin: 10px 0; color: #fff; }
+.price-card ul { list-style: none; margin-top: 18px; font-size: 14px; color: #999; }
+.price-card li { margin-bottom: 8px; }
+.price-card h3 { color: #fff; }
+.price-card h3 span { background: #e91e63; color: #fff; font-size: 10px; padding: 5px 10px; border-radius: 20px; margin-left: 8px; vertical-align: middle; }
+.btn-pink-full { display: block; background: #e91e63; color: #fff; text-align: center; padding: 14px; border-radius: 30px; text-decoration: none; font-weight: 700; margin-top: 24px; }
+.btn-outline-full { display: block; border: 1.5px solid #333; background: transparent; color: #fff; text-align: center; padding: 14px; border-radius: 30px; text-decoration: none; font-weight: 700; margin-top: 24px; }
+.btn-outline-full:hover { border-color: #fff; }
+
+/* FOOTER - DARK */
+footer { background: #0a0a0a; padding: 70px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto; border-top: 1px solid #1f1f1f; }
+footer h2 { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; line-height: 1.1; color: #fff; }
+footer p { color: #666; margin-top: 8px; font-size: 14px; }
+footer b { color: #fff; display: block; margin-top: 16px; }
+footer a { color: #e91e63; text-decoration: none; font-size: 14px; }
+.footer-right { background: #161616; padding: 26px; border-radius: 18px; border: 1px solid #2a2a2a; }
+.footer-right small { display: block; text-align: center; margin-top: 14px; color: #444; font-size: 11px; }
+
+/* MOBILE */
+@media(max-width: 768px){
+  .hero { grid-template-columns: 1fr; padding: 40px 20px; }
+  .hero h1 { font-size: 38px; }
+  .cards, .price-cards, footer { grid-template-columns: 1fr; }
+  header { padding: 20px; }
+  nav a:not(.btn-outline) { display: none; }
+  .work, .pricing { padding: 60px 20px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Kinetik Girls<br>Studio<span>.</span></div>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/2126XXXXXXXX" class="btn-outline">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Web Design for<br>Business That Sells</h1>
+    <p>We are Kinetik Girls Studio - Female studio based in Morocco 🇲🇦. We turn your Instagram into a website that brings clients on instagram.</p>
+    <div class="hero-btns">
+      <a href="#work" class="btn-pink">View Work</a>
+      <a href="https://instagram.com/kinetikgirlsstudio" class="btn-black">instagram Us</a>
+    </div>
+    <div class="hero-tags">• Founded by women • rabat 📍 • All Morocco 🇲🇦 • 24H Delivery</div>
+  </div>
+  <div class="hero-visual"><span>✦</span></div>
+</section>
+
+<section id="work" class="work">
+  <h2>Selected Work</h2>
+  <p class="subtitle">Real websites we built for clients in Morocco</p>
+  <div class="cards">
+    <div class="card">
+      <div class="mockup">La Brace-Authentic italian kitchen(demo)<br><small>Restaurant Menu + WhatsApp</small></div>
+      <h3>Restaurant Website</h3>
+      <span>Menu QR • Order on WhatsApp </span>
+      <a href="https://fghy3989-commits.github.io/restaurants/#menu">→ View Live Site</a>
+    </div>
+    <div class="card">
+      <div class="mockup">Maison Aurélie(demo)<br><small>Booking + Price List</small></div>
+      <h3>Coiffeur Website</h3>
+      <span>Prices • Gallery • WhatsApp Booking</span>
+      <a href="https://fghy3989-commits.github.io/salon.demo/">→ View Live Site</a>
+    </div>
+    <div class="card">
+      <div class="mockup">DriveEasy(demo)<br><small>Permis B - Inscription</small></div>
+      <h3>Auto-École Website</h3>
+      <span>Pricing • Cars • WhatsApp Inscription • Google Maps</span>
+      <a href="https://kinetikgirlsstudio-jpg.github.io/Al-Amana/">→ View Live Site</a>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Simple Pricing</h2>
+  <div class="price-cards">
+    <div class="price-card">
+      <h3>Starter</h3><div class="price">799-999DH </div>
+      <ul><li>✅ 1-Page Website</li><li>✅ Menu + WhatsApp Button</li><li>✅ Google Maps + Instagram</li><li>✅ Ready in 24H</li></ul>
+      <a href="https://instagram.com/kinetikgirlsstudio?text=Salam%20bghit%20Starter%20499DH" class="btn-outline-full">Choose Starter</a>
+    </div>
+    <div class="price-card popular">
+      <h3>Pro <span>Most Popular</span></h3><div class="price">999-1499 DH</div>
+      <ul><li>✅ Everything in Starter</li><li>✅ Custom Domain .com</li><li>✅ QR Code for Tables</li><li>✅ 1 Month Support</li></ul>
+      <a href="https://instagram.com/kinetikgirlsstudio?text=Salam%20bghit%20Pro%20999DH" class="btn-pink-full">Choose Pro</a>
+    </div>
+    <div class="price-card">
+      <h3>Premium</h3><div class="price">1999 DH</div>
+      <ul><li>✅ 5 Pages Website</li><li>✅ Booking System</li><li>✅ Logo Design Included</li><li>✅ 3 Months Support</li></ul>
+      <a href="https://instagram.com/kinetikgirlsstudio?text=Salam%20bghit%20Premium%201999DH" class="btn-outline-full">Choose Premium</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-left">
+    <h2>Let's build something beautiful together.</h2>
+    <p>Based in rabat 📍 Working All Morocco 🇲🇦</p>
+    <b>kinetikgirlsstudio@gmail.com</b><br>
+    <a href="https://instagram.com/kinetikgirlsstudio">@kinetikgirlsstudio</a>
+  </div>
+  <div class="footer-right">
+    <a href="https://instagram.com/kinetikgirlsstudiotext=Salam%20Kinetik%20Girls%20Studio%20bghit%20site" class="btn-pink-full">Talk on instagram - Reply in 30 min 💬</a>
+    <small>© 2026 Kinetik Girls Studio. All rights reserved.</small>
+  </div>
+</footer>
+
+</body>
+</html>
